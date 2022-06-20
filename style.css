@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    
+  }
+  
+  body{
+      font-family: Poppins;
+      background-color: hsl(0, 100%, 74%);
+      font-size: 16px;
+      background-image: url('bg-intro-desktop.png');
+  
+  }
+  
+  main.disp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+  }
+  
+  main.disp div.form .submit{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    padding: 10px;
+    border: 1px;;
+    border-radius: 5px;
+    cursor: pointer;
+     width: 100%;
+  }
+  main.disp div.intro{
+    color: white;
+    width: 30%;
+  }
+  
+  main.diisp div.form{
+    max-width: 100%;
+  }
+  
+  main.disp div.form p.free{
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: centre;
+  }
+  main.disp div.form form{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+  }
+      
+  main.disp div.form p .term{
+    color: hsl(0, 100%, 74%);
+    width: 100%;
+  }
+  
+  main.disp div.form form input{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid hsl(245, 25%, 77%);
+    width: 100%;
+  }
+  
+  main.disp div.form form p.input-error{
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 15px;
+  }
+  
+  main.disp div.form form img{
+    margin-top: 6px;
+    margin-left: -40px;
+    position: absolute;
+  }
+  input:focus{
+    border-color: hsl(245, 25%, 77%);
+  }
+  
+  @media (max-width: 400px){
+    main.disp{
+      flex-direction: column;
+      background-image: url('bg-intro-mobile.png');
+    }
+    main.disp div.intro, main.disp div.form{
+      width:100%
+    }
+  }
+  
+  div.form p.title{
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px hsl(0deg 60% 64%);
+  }
